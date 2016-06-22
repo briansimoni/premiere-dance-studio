@@ -50,7 +50,7 @@ else:
 	if( $sections_order_sixth_section ):
 		illdy_sections_order( $sections_order_sixth_section );
 	endif;
-	
+
 	if( $sections_order_seventh_section ):
 		illdy_sections_order( $sections_order_seventh_section );
 	endif;

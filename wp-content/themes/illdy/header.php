@@ -7,9 +7,9 @@
  */
 ?>
 <?php
-$img_logo = get_theme_mod( 'illdy_img_logo', esc_url( get_template_directory_uri() . '/layout/images/header-logo.png' ) );
+$img_logo = get_theme_mod( 'illdy_img_logo', esc_url( get_template_directory_uri() . '/layout/images/dance_logo.png' ) );
 $text_logo = get_theme_mod( 'illdy_text_logo', __('Illdy', 'illdy') );
-$jumbotron_general_image = get_theme_mod( 'illdy_jumbotron_general_image', esc_url( get_template_directory_uri() . '/layout/images/front-page/front-page-header.png' ) );
+$jumbotron_general_image = get_theme_mod( 'illdy_jumbotron_general_image', esc_url( get_template_directory_uri() . '/layout/images/front-page/dance_header.jpg' ) );
 $preloader_enable = get_theme_mod( 'illdy_preloader_enable', 1 );
 ?>
 <!DOCTYPE html>

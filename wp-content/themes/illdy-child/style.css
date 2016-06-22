@@ -1,0 +1,23 @@
+/*
+ Theme Name:   illdy-child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  illdy child theme for premiere dance academy
+ Author:       Brian Simoni
+ Author URI:   http://premieredanceacademy.net
+ Template:     illdy
+ Version:      1.0.0
+ Text Domain:  illdy-child
+*/
+
+#header {
+    height:100vh;
+}
+
+.header-logo img{
+    width:200%;
+    height:auto;
+}
+
+#header .top-header .header-navigation ul li a:hover {
+    color:#FF00FF
+}
