@@ -29,7 +29,7 @@ $second_button_url = get_theme_mod( 'illdy_jumbotron_general_second_button_url',
 					<p><?php echo illdy_sanitize_html( $entry ); ?></p>
 				<?php endif; ?>
 				<?php if( $first_button_title && $first_button_url ): ?>
-					<a href="<?php echo esc_url( $first_button_url ); ?>" title="<?php echo esc_attr( $first_button_title ); ?>" class="header-button-one"><?php echo esc_html( $first_button_title ); ?></a>
+					<a title="<?php echo esc_attr( $first_button_title ); ?>" class="header-button-one"><?php echo esc_html( $first_button_title ); ?></a>
 				<?php endif; ?>
 			</div><!--/.col-sm-8.col-sm-offset-2-->
 		</div><!--/.row-->
