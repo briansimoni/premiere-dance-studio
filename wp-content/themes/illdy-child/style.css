@@ -9,7 +9,7 @@
  Text Domain:  illdy-child
 */
 
-#header {
+.home #header {
     height:100vh;
 }
 
@@ -32,4 +32,18 @@
 
 #header .bottom-header .header-button-one:hover {
     background:rgba(214,14,230,0.4);
+}
+
+
+.page #header .top-header .header-navigation ul li a {
+    color:#FF00FF
+}
+
+.page #header .top-header .header-navigation ul li a:hover {
+    opacity:0.3;
+}
+
+.page #header h2 {
+    color: #FF00FF;
+    color: black;
 }

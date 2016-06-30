@@ -49,7 +49,7 @@ if(!function_exists('illdy_setup')) {
 		add_theme_support( 'post-thumbnails' );
 		add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption' ) );
 		add_theme_support( 'custom-header', array(
-				'default-image'		=> esc_url( get_template_directory_uri() . '/layout/images/blog/blog-header.png' ),
+				'default-image'		=> esc_url( get_template_directory_uri() . '/layout/images/blog/blog-header.jpg' ),
 				'width'				=> 1920,
 				'height'			=> 532,
 				'flex-height'		=> true,
