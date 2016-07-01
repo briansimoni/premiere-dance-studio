@@ -38,6 +38,10 @@
   padding-top: 0;
   margin-top: 70vh; }
 
+.open-responsive-menu {
+  position: absolute;
+  right: 20px; }
+
 @media (min-width: 767px) {
   #about {
     height: 100vh; } }
