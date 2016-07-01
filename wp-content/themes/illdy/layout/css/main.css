@@ -114,7 +114,7 @@ input {
   float: left;
 }
 #header .top-header .header-logo:hover {
-  color: #f1d204;
+  color: #0466F1;
   text-decoration: none;
 }
 #header .top-header .header-navigation {
@@ -183,7 +183,7 @@ input {
   display: block;
 }
 #header .top-header .header-navigation ul li.menu-item-has-children .sub-menu li a:hover {
-  color: #f1d204;
+  color: #0466F1;
 }
 #header .top-header .header-navigation ul li.menu-item-has-children .sub-menu li a:after {
   display: none;
@@ -255,7 +255,7 @@ input {
   width: auto;
   height: 63px;
   line-height: 63px;
-  background: #f1d204;
+  background: #0466F1;
   margin: 0 15px;
   padding: 0 70px;
   display: inline-block;
@@ -592,7 +592,7 @@ input {
   display: block;
 }
 #latest-news .section-content .post .post-title:hover {
-  color: #f1d204;
+  color: #0466F1;
   text-decoration: none;
 }
 #latest-news .section-content .post .post-entry {
@@ -605,7 +605,7 @@ input {
   line-height: 1.388;
   padding: 0 30px;
   font-size: 18px;
-  color: #f1d204;
+  color: #0466F1;
   text-transform: uppercase;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -623,7 +623,7 @@ input {
   width: auto;
   height: 56px;
   line-height: 56px;
-  background: #f1d204;
+  background: #0466F1;
   margin-bottom: 50px;
   padding: 0 70px;
   display: inline-block;
@@ -1034,7 +1034,7 @@ input {
   color: #888888;
 }
 #footer .widget ul li a:hover {
-  color: #f1d204;
+  color: #0466F1;
 }
 #footer .widget ul li:before {
   color: #888888;
@@ -1066,7 +1066,7 @@ input {
 }
 #blog .blog-post .blog-post-title:hover {
   text-decoration: none;
-  color: #f1d204;
+  color: #0466F1;
 }
 #blog .blog-post h2.blog-post-title:hover {
   color: #333333 !important;
@@ -1087,11 +1087,11 @@ input {
   font-size: 14px;
 }
 #blog .blog-post .blog-post-meta .post-meta-author {
-  color: #f1d204;
+  color: #0466F1;
 }
 #blog .blog-post .blog-post-meta .post-meta-author .fa {
   margin-right: 6px;
-  color: #f1d204;
+  color: #0466F1;
 }
 #blog .blog-post .blog-post-meta .post-meta-time {
   margin-left: 40px;
@@ -1099,7 +1099,7 @@ input {
 }
 #blog .blog-post .blog-post-meta .post-meta-time .fa {
   margin-right: 6px;
-  color: #f1d204;
+  color: #0466F1;
 }
 #blog .blog-post .blog-post-meta .post-meta-comments {
   margin-left: 40px;
@@ -1107,7 +1107,7 @@ input {
 }
 #blog .blog-post .blog-post-meta .post-meta-comments .fa {
   margin-right: 6px;
-  color: #f1d204;
+  color: #0466F1;
 }
 #blog .blog-post .blog-post-meta .post-meta-comments a {
   color: #888888;
@@ -1123,7 +1123,7 @@ input {
 #blog .blog-post .blog-post-button {
   height: 45px;
   line-height: 45px;
-  background-color: #f1d204;
+  background-color: #0466F1;
   padding: 0 30px;
   display: inline-block;
   border-radius: 3px;
@@ -1213,7 +1213,7 @@ input {
   margin: 10px 0 0 0;
   display: inline-block;
   font-size: 20px;
-  color: #f1d204;
+  color: #0466F1;
 }
 #blog .blog-post .blog-post-author p {
   line-height: 1.6;
@@ -1269,7 +1269,7 @@ input {
   content: "";
   width: 41px;
   height: 3px;
-  background-color: #f1d204;
+  background-color: #0466F1;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1308,7 +1308,7 @@ input {
 .widget ul li:before {
   content: "\f105";
   font-family: "FontAwesome";
-  color: #f1d204;
+  color: #0466F1;
   position: absolute;
   left: 0;
 }
@@ -1321,7 +1321,7 @@ input {
   transition: all 0.3s;
 }
 .widget ul li a:hover {
-  color: #f1d204;
+  color: #0466F1;
   text-decoration: none;
 }
 .widget .screen-reader-text {
@@ -1465,7 +1465,7 @@ input {
 .widget .widget-recent-post .recent-post-button {
   width: 100%;
   line-height: 1.466;
-  color: #f1d204;
+  color: #0466F1;
   text-transform: lowercase;
 }
 
@@ -1712,7 +1712,7 @@ input {
   transition: all 0.3s;
 }
 .blog-post-related-articles .related-post:hover .related-post-title {
-  color: #f1d204;
+  color: #0466F1;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -1770,13 +1770,13 @@ input {
   height: auto;
 }
 #comments #comments-list ul.comments .comment .url {
-  color: #f1d204;
+  color: #0466F1;
 }
 #comments #comments-list ul.comments .comment .comment-entry p {
   margin: 15px 0;
 }
 #comments #comments-list ul.comments .comment .comment-reply-link {
-  color: #f1d204;
+  color: #0466F1;
 }
 #comments #comments-list ul.comments .comment ul.children {
   width: 100%;
@@ -1829,7 +1829,7 @@ input {
 #comments #respond .comment-form #input-submit {
   width: auto;
   height: 36px;
-  background-color: #f1d204;
+  background-color: #0466F1;
   padding: 0 40px;
   display: inline-block;
   color: #ffffff;
