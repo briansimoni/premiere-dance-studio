@@ -53,3 +53,17 @@
 #about img {
   margin-left: auto;
   margin-right: auto; }
+
+#about .learn-more {
+  width: auto;
+  height: 56px;
+  line-height: 56px;
+  background: #0466F1;
+  margin-bottom: 50px;
+  padding: 0 70px;
+  display: inline-block;
+  font-weight: 900;
+  font-size: 18px;
+  color: #f7f7f7;
+  text-transform: uppercase;
+  border-radius: 3px; }

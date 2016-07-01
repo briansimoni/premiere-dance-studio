@@ -48,7 +48,7 @@ $general_entry = get_theme_mod( 'illdy_about_general_entry', __( 'It is an amazn
 
             <div class="row">
                 <div class="col-sm-12">
-                    <a class="btn btn-primary">Learn more</a>
+                    <a class="learn-more btn btn-primary">Learn more</a>
                 </div>
             </div>
         </div><!--/.container-->
