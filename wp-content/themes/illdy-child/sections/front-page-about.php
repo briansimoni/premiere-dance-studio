@@ -33,22 +33,22 @@ $general_entry = get_theme_mod( 'illdy_about_general_entry', __( 'It is an amazn
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
-                    <img class="thumbnail" src="http://placehold.it/300x360">
-                    <p>Experienced Staff</p>
+                    <img class="thumbnail img-responsive" src="http://placehold.it/300x360">
+                    <h3>Experienced Staff</h3>
                 </div>
                 <div class="col-sm-4">
-                    <img class="thumbnail" src="http://placehold.it/300x360">
-                    <p>Small Class Sizes</p>
+                    <img class="thumbnail img-responsive" src="http://placehold.it/300x360">
+                    <h3>Small Class Sizes</h3>
                 </div>
                 <div class="col-sm-4">
-                    <img class="thumbnail" src="http://placehold.it/300x360">
-                    <p>Fun and Family Friendly</p>
+                    <img class="thumbnail img-responsive" src="http://placehold.it/300x360">
+                    <h3>Fun and Family Friendly</h3>
                 </div>
             </div><!--/.row-->
 
             <div class="row">
                 <div class="col-sm-12">
-                    <a class="learn-more btn btn-primary">Learn more</a>
+                    <a href="<?php echo get_site_url() . '/about' ?>" class="learn-more btn btn-primary">Learn more</a>
                 </div>
             </div>
         </div><!--/.container-->

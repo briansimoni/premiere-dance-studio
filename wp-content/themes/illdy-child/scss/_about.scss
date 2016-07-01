@@ -29,4 +29,11 @@
     text-transform: uppercase;
     border-radius: 3px;
   }
+
+  @include respond-to('small') {
+    .learn-more {
+      margin-top:50px;
+      margin-bottom:0;
+    }
+  }
 }
