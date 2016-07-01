@@ -1,0 +1,31 @@
+.home #header {
+  height: 100vh; }
+
+.page #header .top-header .header-navigation ul li a {
+  color: #FF00FF; }
+
+.page #header .top-header .header-navigation ul li a:hover {
+  opacity: 0.3; }
+
+.page #header h2 {
+  color: #FF00FF;
+  color: black; }
+
+.header-logo img {
+  width: 200%;
+  height: auto; }
+
+#header .top-header .header-navigation ul li a:hover {
+  color: #FF00FF; }
+
+#header .bottom-header {
+  position: absolute;
+  top: 0;
+  padding-top: 0;
+  margin-top: 70vh; }
+
+#header .bottom-header .header-button-one {
+  background: rgba(214, 14, 230, 0.8); }
+
+#header .bottom-header .header-button-one:hover {
+  background: rgba(214, 14, 230, 0.4); }
