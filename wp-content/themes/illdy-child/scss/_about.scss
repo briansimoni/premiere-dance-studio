@@ -1,0 +1,17 @@
+@include respond-to('small') {
+  #about {
+    height: 100vh;
+  }
+}
+
+#about {
+  h3 {
+    line-height: 1.2;
+    text-transform: none;
+  }
+
+  img {
+    margin-left:auto;
+    margin-right:auto;
+  }
+}

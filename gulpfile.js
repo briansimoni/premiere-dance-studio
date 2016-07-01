@@ -9,3 +9,7 @@ gulp.task('sass', function () {
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./wp-content/themes/illdy-child/styles'));
 });
+
+gulp.task('sass:watch', function () {
+    gulp.watch('./wp-content/themes/illdy-child/scss/*.scss', ['sass']);
+});
