@@ -7,7 +7,6 @@
  */
 ?>
 <?php
-$mailResult = wp_mail( 'simonib1337@gmail.com', 'test if mail works', 'hurray' );
 $general_title = get_theme_mod( 'illdy_about_general_title', __( 'About', 'illdy' ) );
 $general_entry = get_theme_mod( 'illdy_about_general_entry', __( 'It is an amazng one-page theme with great features that offers an incredible experience. It is easy to install, make changes, adapt for your business. A modern design with clean lines and styling for a wide variety of content, exactly how a business design should be. You can add as many images as you want to the main header area and turn them into slider.', 'illdy' ) );
 ?>
