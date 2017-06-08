@@ -72,3 +72,9 @@
   #about .learn-more {
     margin-top: 50px;
     margin-bottom: 0; } }
+
+@media (min-width: 767px) {
+  #small-class-sizes {
+    margin-top: 21.5%;
+  }
+}

@@ -31,17 +31,17 @@ $general_entry = get_theme_mod( 'illdy_about_general_entry', __( 'It is an amazn
     <?php endif; ?>
     <div class="section-content">
         <div class="container">
-            <div class="row">
+            <div class="row" id="three-images">
                 <div class="col-sm-4">
-                    <img class="thumbnail img-responsive" src="http://placehold.it/300x360">
+                    <img class="thumbnail img-responsive" src="<?php echo get_stylesheet_directory_uri() . "/images/dancer1-medium.jpg"?>">
                     <h3>Experienced Staff</h3>
                 </div>
                 <div class="col-sm-4">
-                    <img class="thumbnail img-responsive" src="http://placehold.it/300x360">
-                    <h3>Small Class Sizes</h3>
+                    <img class="thumbnail img-responsive" src="<?php echo get_stylesheet_directory_uri() . "/images/dancers2-medium.jpg"?>">
+                    <h3 id="small-class-sizes">Small Class Sizes</h3>
                 </div>
                 <div class="col-sm-4">
-                    <img class="thumbnail img-responsive" src="http://placehold.it/300x360">
+                    <img class="thumbnail img-responsive" src="<?php echo get_stylesheet_directory_uri() . "/images/dancers3-medium.jpg"?>">
                     <h3>Fun and Family Friendly</h3>
                 </div>
             </div><!--/.row-->
