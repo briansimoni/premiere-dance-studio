@@ -93,7 +93,7 @@
 	/* Footer Copyright */
 	wp.customize( 'illdy_footer_copyright', function( value ) {
 		value.bind( function( newval ) {
-			$( '#footer .copyright' ).html( newval );
+			$( '#footer .bottom-copyright' ).html( newval );
 		} );
 	} );
 
@@ -141,16 +141,6 @@
 		} );
 	} );
 
-	/* Social Sharing on single blog posts */
-	wp.customize( 'illdy_enable_social_sharing_blog_posts', function( value ) {
-		value.bind( function( newval ) {
-			if( newval == false ) {
-				$( 'body.single #blog .blog-post .social-links-list' ).addClass( 'customizer-display-none' );
-			} else if( newval == true ) {
-				$( 'body.single #blog .blog-post .social-links-list' ).removeClass( 'customizer-display-none' );
-			}
-		} );
-	} );
 
 	/* Author Info Box on single blog posts */
 	wp.customize( 'illdy_enable_author_box_blog_posts', function( value ) {
@@ -202,40 +192,25 @@
 			if( newval == 'remove-header' ) {
 				$( '#header.header-blog' ).removeAttr( 'style' );
 			} else if( newval == 'random-uploaded-image' ) {
-				$( '#header.header-blog' ).removeAttr( 'style' );
+				// $( '#header.header-blog' ).removeAttr( 'style' );
 			} else if( newval == 'random-default-image' ) {
-				$( '#header.header-blog' ).removeAttr( 'style' );
+				// $( '#header.header-blog' ).removeAttr( 'style' );
 			} else {
 				$( '#header.header-blog' ).css( 'background-image', 'url('+ newval +')' );
 			}
 		} );
 	} );
 
-	// Blog name
-	wp.customize( 'blogname', function( value ) {
-		value.bind( function( newval ) {
-			$( '#header .bottom-header h2' ).html( newval + '<span class="span-dot">.</span>' );
-		} );
-	} );
-
-	// Blog description
-	wp.customize( 'blogdescription', function( value ) {
-		value.bind( function( newval ) {
-			$( '#header .bottom-header p' ).html( newval );
-		} );
-	} );
-
 	// Image
-	wp.customize( 'illdy_jumbotron_general_image', function( value ) {
-		value.bind( function( newval ) {
-			console.log( newval );
-			if( newval == '' ) {
-				$( '#header.header-front-page' ).removeAttr( 'style' );
-			} else {
-				$( '#header.header-front-page' ).css( 'background-image', 'url('+ newval +')' );
-			}
-		} );
-	} );
+	// wp.customize( 'illdy_jumbotron_general_image', function( value ) {
+	// 	value.bind( function( newval ) {
+	// 		if( newval == '' ) {
+	// 			$( '#header.header-front-page' ).removeAttr( 'style' );
+	// 		} else {
+	// 			$( '#header.header-front-page' ).css( 'background-image', 'url('+ newval +')' );
+	// 		}
+	// 	} );
+	// } );
 
 	// First word from title
 	wp.customize( 'illdy_jumbotron_general_first_row_from_title', function( value ) {
@@ -280,6 +255,12 @@
 	// First button text
 	wp.customize( 'illdy_jumbotron_general_first_button_title', function( value ) {
 		value.bind( function( newval ) {
+			if ( newval == false ) {
+				$( '#header .bottom-header .header-button-one' ).hide();
+			}
+			if ( newval != '' ) {
+				$( '#header .bottom-header .header-button-one' ).show();
+			}
 			$( '#header .bottom-header .header-button-one' ).html( newval );
 		} );
 	} );
@@ -294,6 +275,12 @@
 	// Second button text
 	wp.customize( 'illdy_jumbotron_general_second_button_title', function( value ) {
 		value.bind( function( newval ) {
+			if ( newval == false ) {
+				$( '#header .bottom-header .header-button-two' ).hide();
+			}
+			if ( newval != '' ) {
+				$( '#header .bottom-header .header-button-two' ).show();
+			}
 			$( '#header .bottom-header .header-button-two' ).html( newval );
 		} );
 	} );
@@ -463,7 +450,6 @@
 	wp.customize( 'illdy_counter_background_type', function( value ) {
 		value.bind( function( newval ) {
 			if( newval == 'image' ) {
-				$( '#counter' ).css( 'background-color', '' );
 				$( '#counter' ).css( 'background-image', 'url('+ wp.customize._value.illdy_counter_background_image() +')' );
 			} else if( newval == 'color' ) {
 				$( '#counter' ).css( 'background-image', '' );
@@ -476,7 +462,7 @@
 	wp.customize( 'illdy_counter_background_image', function( value ) {
 		value.bind( function( newval ) {
 			if( newval == '' ) {
-				$( '#counter' ).removeAttr( 'style' );
+				$( '#counter' ).css( 'background-image', '' );
 			} else {
 				$( '#counter' ).css( 'background-image', 'url('+ newval +')' );
 			}
@@ -516,7 +502,7 @@
 	} );
 
 	// Show this section
-	wp.customize( 'illdy_contact_us_general_show', function( value ) {
+	wp.customize( 'illdy_contact_us_show', function( value ) {
 		value.bind( function( newval ) {
 			if( newval == false ) {
 				$( '#contact-us' ).addClass( 'customizer-display-none' );
@@ -553,4 +539,54 @@
 			$( '#contact-us .section-content .contact-us-box .box-left[data-customizer="box-left-customer-support-title"]' ).html( newval );
 		} );
 	} );
+
+	// Color scheme
+	wp.customize.bind('preview-ready', function () {
+		wp.customize.preview.bind('update-inline-css', function (object) {
+
+			var data = {
+				'action': object.action,
+				'args'  : object.data,
+				'id'    : object.id
+			};
+
+			jQuery.ajax({
+				dataType: 'json',
+				type    : 'POST',
+				url     : WPUrls.ajaxurl,
+				data    : data,
+				complete: function (json) {
+					var sufix = object.action + object.id;
+					var style = $('#illdy-main-inline-css');
+
+					if ( !style.length ) {
+						style = $('head').append('<style type="text/css" id="illdy-main-inline-css" />').find('#illdy-main-inline-css');
+					}
+
+					style.html(json.responseText);
+				}
+			});
+		});
+
+		wp.customize.preview.bind('update-section-css', function (object) {
+			var illdy_templates = {};
+			var template = '#illdy-'+object.illdy_section+'-section';
+			var h_t = Handlebars.compile($(template).text());
+			var html = h_t(object.values);
+			var style = $('#illdy-'+object.illdy_section+'-section-css');
+			if ( !style.length ) {
+				style = $('head').append('<style type="text/css" id="illdy-'+object.illdy_section+'-section-css" />').find('#illdy-'+object.illdy_section+'-section-css');
+			}
+			
+			style.html(html);
+		});
+
+	});
+
+	$(document).ready(function(){
+		wp.customize.selectiveRefresh.bind('widget-updated', function (placement) {
+			$('.parallax-window').parallax();
+		});
+	});
+
 } )( jQuery );
