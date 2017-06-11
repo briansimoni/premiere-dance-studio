@@ -23,7 +23,7 @@
 				</div><!--/.col-sm-12-->
 			<?php }elseif ( class_exists( 'WooCommerce' ) && is_shop() ) {
 				$title = get_the_title(woocommerce_get_page_id( 'shop' ));
-				echo '<h1>' . esc_html( $title ) . '</h1>';
+//				echo '<h1>' . esc_html( $title ) . '</h1>';
 			}else{ ?>
 				<div class="col-sm-12">
 					<?php

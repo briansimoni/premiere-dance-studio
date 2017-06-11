@@ -1,0 +1,21 @@
+#header.header-front-page .bottom-header .header-button-one {
+    background-color: #0066bf;
+}
+
+#header.header-front-page .bottom-header .header-button-one:hover {
+    background-color: #0089f1;
+    border-color: #0089f1;
+}
+
+#header .top-header .header-navigation ul li:hover a {
+    color: #FF00FF;
+    transition: 0.2s;
+}
+
+.bottom-header h2 {
+    color: #FF00FF;
+}
+
+#header .bottom-header.blog p {
+    color: #FF00FF;
+}
