@@ -19,3 +19,7 @@
 #header .bottom-header.blog p {
     color: #FF00FF;
 }
+
+#about, #static-page-content {
+    padding-bottom: 15px;
+}
