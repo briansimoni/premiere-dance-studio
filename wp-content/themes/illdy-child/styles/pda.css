@@ -25,5 +25,5 @@
 }
 
 #about, #static-page-content  {
-    margin-bottom: 50px !important;
+    margin-bottom: 50px; !important
 }
