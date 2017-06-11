@@ -24,6 +24,6 @@
     padding-bottom: 15px;
 }
 
-#about, #static-page-content {
-    margin-bottom: 50px;
+#about, #static-page-content  {
+    margin-bottom: 50px !important;
 }
