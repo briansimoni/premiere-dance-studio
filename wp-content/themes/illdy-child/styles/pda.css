@@ -23,3 +23,7 @@
 #about, #static-page-content {
     padding-bottom: 15px;
 }
+
+#about, #static-page-content {
+    margin-bottom: 50px;
+}
