@@ -12,6 +12,11 @@
     transition: 0.2s;
 }
 
+#header .bottom-header h1 {
+    color: #FF00FF;
+
+}
+
 .bottom-header h2 {
     color: #FF00FF;
 }
