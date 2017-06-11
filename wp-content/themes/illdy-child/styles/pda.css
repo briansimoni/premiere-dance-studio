@@ -24,6 +24,6 @@
     padding-bottom: 15px;
 }
 
-#about, #static-page-content  {
-    margin-bottom: 50px; !important
+.front-page-section .section-header {
+    margin-bottom: 10px !important;
 }
