@@ -75,6 +75,7 @@ class Illdy_Widget_Person extends WP_Widget {
         $twitter_url = !empty( $instance['twitter_url'] ) ? esc_url( $instance['twitter_url'] ) : '';
         $linkedin_url = !empty( $instance['linkedin_url'] ) ? esc_url( $instance['linkedin_url'] ) : '';
         $color = ( !empty( $instance['color'] ) ? esc_attr( $instance['color'] ) : '#000000' );
+        $link = ( !empty($instance['link']) ? esc_attr( $instance['link'] ) : '');
 
         $image_id = illdy_get_image_id_from_image_url( $image );
         $get_attachment_image_src = wp_get_attachment_image_src( $image_id, 'illdy-front-page-person' );
@@ -83,10 +84,14 @@ class Illdy_Widget_Person extends WP_Widget {
 
         $output .= '<div class="person clearfix" data-person-color="'. $color .'">';
             $output .= '<div class="person-image">';
+                $output .= $link ? '<a href="'. $link .'">' : '';
                 $output .= ( $image_id ? '<img src="'. $get_attachment_image_src[0] .'" alt="'. $title .'" title="'. $title .'" />' : ( $image ? '<img src="'. $image .'" alt="'. $title .'" title="'. $title .'" />' : '' ) );
+                $output .= $link ? '</a>' : '';
             $output .= '</div><!--/.person-image-->';
             $output .= '<div class="person-content">';
+                $output .= $link ? '<a href="'. $link .'">' : '';
                 $output .= '<h6>'. $title .'</h6>';
+                $output .= $link ? '</a>' : '';
                 $output .= '<p class="person-position">'. $position .'</p>';
                 $output .= '<p>'. $entry .'</p>';
                 $output .= '<ul class="person-content-social clearfix">';
@@ -118,6 +123,7 @@ class Illdy_Widget_Person extends WP_Widget {
         $twitter_url = !empty( $instance['twitter_url'] ) ? esc_url( $instance['twitter_url'] ) : '';
         $linkedin_url = !empty( $instance['linkedin_url'] ) ? esc_url( $instance['linkedin_url'] ) : '';
         $color = !empty( $instance['color'] ) ? esc_attr( $instance['color'] ) : '';
+        $link = !empty( $instance['link'] ) ? esc_attr( $instance['link'] ) : '';
         ?>
 
         <p>
@@ -160,6 +166,11 @@ class Illdy_Widget_Person extends WP_Widget {
             <label for="<?php echo $this->get_field_id( 'color' ); ?>"><?php _e( 'Color:', 'illdy' ); ?></label><br>
             <input type="text" name="<?php echo $this->get_field_name( 'color' ); ?>" class="color-picker" id="<?php echo $this->get_field_id( 'color' ); ?>" value="<?php echo $color; ?>" data-default-color="#000000" />
         </p>
+        <p>
+            <label for="<?php echo $this->get_field_id( 'link' ); ?>"><?php _e( 'Link:', 'illdy' ); ?></label>
+            <input class="widefat" id="<?php echo $this->get_field_id( 'link' ); ?>" name="<?php echo $this->get_field_name( 'link' ); ?>" type="text" value="<?php echo esc_attr( $link ); ?>">
+        </p>
+
         <?php 
     }
 
@@ -183,6 +194,7 @@ class Illdy_Widget_Person extends WP_Widget {
         $instance['twitter_url'] = ( !empty( $new_instance['twitter_url'] ) ? esc_url( $new_instance['twitter_url'] ) : '' );
         $instance['linkedin_url'] = ( !empty( $new_instance['linkedin_url'] ) ? esc_url( $new_instance['linkedin_url'] ) : '' );
         $instance['color'] = ( !empty( $new_instance['color'] ) ? esc_html( $new_instance['color'] ) : '' );
+        $instance['link'] = ( !empty( $new_instance['link'] ) ? esc_html( $new_instance['link'] ) : '' );
 
         return $instance;
     }
